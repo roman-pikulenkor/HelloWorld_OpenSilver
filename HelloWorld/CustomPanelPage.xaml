@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="HelloWorld.CustomPanelPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld">
+
+    <Grid Margin="50" Name="CustomGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Custom Panel" FontSize="24" TextAlignment="Center"/>
+        <local:DiagnolPanel Grid.Row="1" Width="220" >
+            <Button BorderBrush="Black" Content="B0" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Content="B1" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Content="B2 (Auto)" Background="Red" Height="30"/>
+            <Button BorderBrush="Black" Content="B3" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Content="B4" Width="40" Height="30"/>
+        </local:DiagnolPanel>
+        <TextBlock Grid.Row="2" Text="Custom Panel" FontSize="18" Padding="20" TextAlignment="Center"/>
+        <Button Grid.Row="3" Content="Calculate" Padding="20" />
+    </Grid>
+</Page>

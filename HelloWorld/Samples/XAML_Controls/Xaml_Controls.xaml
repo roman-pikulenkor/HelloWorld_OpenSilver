@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="HelloWorld.Samples.XAML_Controls.Xaml_Controls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld.Samples">
+
+    <ScrollViewer x:Name="ScrollViewer1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible">
+        <StackPanel>
+            <TextBlock Text="Panels &amp; Controls" Style="{StaticResource PageHeader_Style}"/>
+            <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+                <local:Grid_Demo HorizontalAlignment="Center" Margin="50"/>
+                <local:StackPanel_Demo HorizontalAlignment="Center" Margin="50"/>
+                <local:DockPanel_Demo HorizontalAlignment="Center" Margin="50"/>
+                <local:WrapPanel_Demo HorizontalAlignment="Center" Margin="50"/>
+            </local:MasonryPanelWithProgressiveLoading>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

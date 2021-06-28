@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="HelloWorld.StackPanelTestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld" Background="#00AA00" CustomLayout="True">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2" Background="#333333">
+        <Border Height="20" Background="#FF03A9F4" CornerRadius="2" Margin="2,2,100,2"/>
+        <Border Height="20" Background="#FFFF5177" CornerRadius="2" Margin="50,2"/>
+        <Border Height="20" Background="#FF12C700" CornerRadius="2" Margin="100,2,2,2"/>
+        <Border Height="15" Background="#FFFFB300" CornerRadius="2" Margin="2" HorizontalAlignment="Left" Width="40"/>
+        <Border Height="20" Background="#FFE040FB" CornerRadius="2" Margin="2" HorizontalAlignment="Center" Width="40"/>
+        <Border Height="20" Background="#FF616161" CornerRadius="2" Margin="2" HorizontalAlignment="Right" Width="40"/>
+        <Button FontSize="14" Content="CustomPanel" Padding="10,5" Margin="5" Click="NavigateButton_Click"/>
+        <Button FontSize="14" Content="CheckBox" Padding="5" Margin="5" Click="CheckBoxButton_Click"/>
+        <Button FontSize="14" Content="GridTest" Padding="5" Margin="5" Click="GridButton_Click"/>
+        <Button FontSize="14" Content="GridTest 2" Padding="5" Margin="5" Click="Grid2Button_Click"/>
+        <Button FontSize="14" Content="Canvas" Padding="5" Margin="5" Click="CanvasButton_Click"/>
+        <Button FontSize="14" Content="DockPanel" Padding="5" Margin="5" Click="DockPanelButton_Click"/>
+        <Button FontSize="14" Content="WrapPanel" Padding="5" Margin="5" Click="WrapPanelButton_Click"/>
+        <Button FontSize="14" Content="TextBox" Padding="5" Margin="5" Click="TextBoxButton_Click"/>
+        <Button FontSize="14" Content="Shapes" Padding="5" Margin="5" Click="ShapeButton_Click"/>
+        <Button FontSize="14" Content="ScrollViewer &amp; Expander" Padding="5" Margin="5" Click="ExpanderButton_Click"/>
+        <Button FontSize="14" Content="Child Window" Padding="5" Margin="5" Click="ChildButton_Click"/>
+        <Button FontSize="14" Content="Popup" Padding="5" Margin="5" Click="PopupButton_Click"/>
+        <Button FontSize="14" x:Name="CalculateButton" Content="CalculateButton" Padding="10,5" Margin="10 7 9 11" Click="CalculateButton_Click"/>
+    </StackPanel>
+</Page>
+

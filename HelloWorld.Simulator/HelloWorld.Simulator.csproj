@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net472</TargetFramework>
+        <StartArguments>"..\..\..\..\HelloWorld\bin\$(Configuration)\netstandard2.0\HelloWorld.dll"</StartArguments>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OpenSilver.Simulator" Version="1.0.0-alpha-008" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HelloWorld\HelloWorld.csproj" />
+    </ItemGroup>
+
+</Project>

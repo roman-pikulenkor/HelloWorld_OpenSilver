@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="HelloWorld.CanvasTestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld">
+
+    <Canvas Background="#eeeeee" HorizontalAlignment="Center" Width="500">
+        <Button Canvas.Left="200" Canvas.Top="50" Canvas.ZIndex="6"  Content="Calculate" Click="CalculateButton_Click"/>
+        <Border Canvas.Left="0" Canvas.Top="30" Canvas.ZIndex="0" Width="120" Height="120" Background="#FF03A9F4" CornerRadius="2"/>
+        <Border Canvas.Left="30" Canvas.Top="60" Canvas.ZIndex="4" Width="120" Height="120" Background="#FFFF5177" CornerRadius="2"/>
+        <Border Canvas.Left="60" Canvas.Top="90" Canvas.ZIndex="3" Width="120" Height="120" Background="#FF12C700" CornerRadius="2"/>
+        <Border Canvas.Left="90" Canvas.Top="120" Canvas.ZIndex="5" Width="120" Height="120" Background="#FFFFB300" CornerRadius="2"/>
+        <Border Canvas.Left="120" Canvas.Top="150" Canvas.ZIndex="2" Width="120" Height="120" Background="#FFE040FB" CornerRadius="2"/>
+        <Border Canvas.Left="150" Canvas.Top="180" Canvas.ZIndex="1" Width="120" Height="120" Background="#FF616161" CornerRadius="2"/>
+    </Canvas>
+</Page>

@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="HelloWorld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:DiagnolPanel Grid.Row="0">
+            <Button BorderBrush="Black" Background="Red" Content="0" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="1" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="2" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="3" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="4" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="5" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="6" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="7" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="8" Width="40" Height="30"/>
+        </local:DiagnolPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button BorderBrush="Black" Background="Red" Content="0" Width="Auto" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="1" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="2" Width="40" Height="30"/>
+        </StackPanel>
+        <WrapPanel Grid.Row="2">
+            <Button BorderBrush="Black" Background="Red" Content="0" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="1" Width="40" Height="30"/>
+            <Button BorderBrush="Black" Background="Red" Content="2" Width="40" Height="30"/>
+        </WrapPanel>
+        <Canvas Grid.Row="3">
+            <Button BorderBrush="Black" Background="Red" Content="1" Width="Auto" Canvas.Left="197" Canvas.Top="24"/>
+            <Button BorderBrush="Black" Background="Red" Content="2" Width="40" Canvas.Left="48" Canvas.Top="39"/>
+            <Button BorderBrush="Black" Background="Red" Content="3" Width="40" Canvas.Left="105" Canvas.Top="10"/>
+        </Canvas>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Height="50" HorizontalAlignment="Center">
+                <Button Name="btnCalculate" BorderBrush="Black" Background="Gray" Content="CalculateLayout" Width="100" Height="40" 
+                        Click="Button_Click" SizeChanged="Button_SizeChanged"/>
+            </Grid>
+        </Grid>
+    </Grid>
+    
+</Page>

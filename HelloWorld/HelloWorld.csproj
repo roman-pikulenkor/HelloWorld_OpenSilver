@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Configurations>Debug;Release;</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;OPENSILVER</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>OPENSILVER</DefineConstants>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="BorderTestPage.xaml" />
+    <None Remove="CanvasTestPage.xaml" />
+    <None Remove="ChildWindowTestPage.xaml" />
+    <None Remove="DockPanelTestPage.xaml" />
+    <None Remove="EmptyOpenSilverMigrationApplication.csproj.vspscc" />
+    <None Remove="Expander_Styles.xaml" />
+    <None Remove="FrameTestPage.xaml" />
+    <None Remove="GridTestPage.xaml" />
+    <None Remove="GridTestPage2.xaml" />
+    <None Remove="LoginWindow.xaml" />
+    <None Remove="MyTemplate_rename_me_after_export.vstemplate" />
+    <None Remove="PopupTestPage.xaml" />
+    <None Remove="Samples\XAML_Controls\DockPanel\DockPanel_Demo.xaml" />
+    <None Remove="Samples\XAML_Controls\WrapPanel\WrapPanel_Demo.xaml" />
+    <None Remove="Samples\XAML_Controls\Xaml_Controls.xaml" />
+    <None Remove="ScrollViewerTestPage.xaml" />
+    <None Remove="ShapeTestPage.xaml" />
+    <None Remove="SingleCellTestPage.xaml" />
+    <None Remove="StackPanelTestPage.xaml" />
+    <None Remove="TextTestPage.xaml" />
+    <None Remove="TileViewTestPage.xaml" />
+    <None Remove="TranslateTestPage.xaml" />
+    <None Remove="WrapPanelTestPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="BorderTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="CanvasTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="ChildWindowTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="DockPanelTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="FrameTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="GridTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="GridTestPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="PopupTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\XAML_Controls\DockPanel\DockPanel_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\XAML_Controls\WrapPanel\WrapPanel_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\XAML_Controls\Xaml_Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+	<Content Include="Samples\XAML_Controls\Grid\Grid_Demo.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</Content>
+	<Content Include="Samples\XAML_Controls\StackPanel\StackPanel_Demo.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</Content>
+    <Content Include="ScrollViewerTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="SingleCellTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="TextTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="ShapeTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="StackPanelTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="TileViewTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="TranslateTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="UnoTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+	<Content Include="CustomPanelPage.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</Content>
+	<Content Include="WrapPanelTestPage.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</Content>
+	<PackageReference Include="OpenSilver.WorkInProgress" Version="1.0.0-alpha-008" />
+	<Content Update="UnoTestPage.xaml">
+		<Generator>MSBuild:Compile</Generator>
+	</Content>
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+	<Page Include="Other\Styles.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="UnoTestPage.xaml.cs">
+      <DependentUpon>UnoTestPage.xaml</DependentUpon>
+    </Compile>
+	<Compile Update="CustomPanelPage.xaml.cs">
+	  <DependentUpon>CustomPanelPage.xaml</DependentUpon>
+	</Compile>
+  </ItemGroup>
+  
+</Project>

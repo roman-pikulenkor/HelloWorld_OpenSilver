@@ -1,0 +1,26 @@
+﻿<UserControl
+    x:Class="HelloWorld.Samples.DockPanel_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld.Samples">
+
+    <ContentControl Style="{StaticResource Card_Style}" Width="180">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="DockPanel" Foreground="#FFD66DED" Background="#FFBA8AC6" Style="{StaticResource HeaderControl_Style}"/>
+            <DockPanel Grid.Row="1" Width="150" Height="100"  Background="#DDDDDD" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Border DockPanel.Dock="Left" Width="50" Background="#FF6666ff" CornerRadius="2" Margin="2"/>
+                <Border DockPanel.Dock="Top" Height="20" Background="#ffff4d4d" CornerRadius="2" Margin="2"/>
+                <Border DockPanel.Dock="Right" Width="50" Background="#ff4dff4d" CornerRadius="2" Margin="2"/>
+                <Border DockPanel.Dock="Bottom" Height="20" Background="#ffffb84d" CornerRadius="2" Margin="2"/>
+                <Border DockPanel.Dock="Left" Width="50" Background="#FFD66DED" CornerRadius="2" Margin="2"/>
+                <Border Background="Pink" CornerRadius="2" Margin="2"/>
+            </DockPanel>
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Background="#FFD66DED" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>
