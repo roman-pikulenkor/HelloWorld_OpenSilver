@@ -24,6 +24,7 @@
   <ItemGroup>
     <None Remove="BorderTestPage.xaml" />
     <None Remove="CanvasTestPage.xaml" />
+    <None Remove="CheckBoxTestPage.xaml" />
     <None Remove="ChildWindowTestPage.xaml" />
     <None Remove="DockPanelTestPage.xaml" />
     <None Remove="EmptyOpenSilverMigrationApplication.csproj.vspscc" />
@@ -52,6 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="CanvasTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="CheckBoxTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="ChildWindowTestPage.xaml">
