@@ -1,0 +1,15 @@
+﻿<UserControl
+    x:Class="HelloWorld.TestTabcontrol"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HelloWorld">
+
+    <TabControl x:Name="Tabcontrol">
+        <TabItem x:Name="FirstTab" Header="First" IsSelected="True">
+            <Button x:Name="button1" Content="Click 1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" CustomLayout="True" Margin="1 2 3 4"/>
+        </TabItem>
+        <TabItem x:Name="SecondTab" Header="Second">
+            <Button x:Name="button2" Content="Click 2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" CustomLayout="True"/>
+        </TabItem>
+    </TabControl>
+</UserControl>

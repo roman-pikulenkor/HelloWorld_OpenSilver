@@ -6,10 +6,11 @@
     Loaded="Page_Loaded"
     >
     <!--<TextBlock Text="TestMessage" Margin="10" Width="200" Height="50" FontSize="15"/>-->
-    <!--<CheckBox Content="CheckBox 1"
-                      IsChecked="True" />-->
 
-    <!--<ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <!--<CheckBox Content="CheckBox 1"
+                    IsChecked="True" />-->
+
+    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <StackPanel HorizontalAlignment="Center"
                 VerticalAlignment="Center">
             <CheckBox Content="CheckBox 1"
@@ -23,7 +24,7 @@
                       IsEnabled="False" />
             <CheckBox Content="CheckBox 5"
                       IsChecked="False"
-                      IsEnabled="False" />
+                      IsEnabled="True" />
             <TextBlock Text="1________" Margin="10"/>
 
             <CheckBox Content="CheckBox 1"
@@ -222,5 +223,5 @@
                       IsEnabled="False" />
             <TextBlock Text="15________" Margin="10"/>
         </StackPanel>
-    </ScrollViewer>-->
+    </ScrollViewer>
 </Page>

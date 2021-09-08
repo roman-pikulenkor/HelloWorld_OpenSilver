@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{63A8E6BF-893B-4CD9-90A8-3113AE99EB5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{63A8E6BF-893B-4CD9-90A8-3113AE99EB5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Simulator", "HelloWorld.Simulator\HelloWorld.Simulator.csproj", "{377D1DAA-AAC9-4868-A099-DD6CD1E5FC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Simulator", "HelloWorld.Simulator\HelloWorld.Simulator.csproj", "{377D1DAA-AAC9-4868-A099-DD6CD1E5FC22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Browser", "HelloWorld.Browser\HelloWorld.Browser.csproj", "{EF8E6FBD-3A7E-4F44-A318-F599581845E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Browser", "HelloWorld.Browser\HelloWorld.Browser.csproj", "{EF8E6FBD-3A7E-4F44-A318-F599581845E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

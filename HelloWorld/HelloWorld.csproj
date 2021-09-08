@@ -42,6 +42,8 @@
     <None Remove="ShapeTestPage.xaml" />
     <None Remove="SingleCellTestPage.xaml" />
     <None Remove="StackPanelTestPage.xaml" />
+    <None Remove="TestCustomLayout.xaml" />
+    <None Remove="TestTabcontrol.xaml" />
     <None Remove="TextTestPage.xaml" />
     <None Remove="TileViewTestPage.xaml" />
     <None Remove="TranslateTestPage.xaml" />
@@ -100,6 +102,12 @@
     <Content Include="SingleCellTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+    <Content Include="TestCustomLayout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="TestTabcontrol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="TextTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -128,7 +136,7 @@
 	<Content Include="WrapPanelTestPage.xaml">
 	  <Generator>MSBuild:Compile</Generator>
 	</Content>
-	<PackageReference Include="OpenSilver.WorkInProgress" Version="1.0.0-alpha-008" />
+	<PackageReference Include="OpenSilver" Version="1.0.0-alpha-008" />
 	<Content Update="UnoTestPage.xaml">
 		<Generator>MSBuild:Compile</Generator>
 	</Content>

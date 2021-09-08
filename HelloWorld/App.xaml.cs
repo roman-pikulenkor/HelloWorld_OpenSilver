@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSHTML5;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,13 +12,22 @@ namespace HelloWorld
     {
         public App()
         {
+            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, App started");
             this.InitializeComponent();
+
+            //Application.Current.Host.Settings.EnableInteropLogging = true;
+
+            //Console.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading started");
+            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading started");
+
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
 
             // Enter construction logic here...
 
             //var page = new SingleCellTestPage();
 
-            var page = new StackPanelTestPage();
+            //var page = new StackPanelTestPage();
 
             //var page = new FrameTestPage();
 
@@ -34,6 +44,8 @@ namespace HelloWorld
             //var page = new ScrollViewerTestPage();
 
             //var page = new CustomPanelPage();
+
+            //var page = new TestTabcontrol();
 
             //Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss.fff")}");
             //var page = new GridTestPage();
@@ -52,7 +64,16 @@ namespace HelloWorld
 
             //var page = new TileViewTestPage();
 
+            //var page = new CheckBoxTestPage();
+
+            var page = new TestCustomLayout();
+
             Window.Current.Content = page;
+
+            stopwatch.Stop();
+
+            Console.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading done in: " + stopwatch.ElapsedMilliseconds);
+            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading done in: " + stopwatch.ElapsedMilliseconds);
 
         }
     }

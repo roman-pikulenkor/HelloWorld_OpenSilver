@@ -12,8 +12,8 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="Custom Panel" FontSize="24" TextAlignment="Center"/>
-        <local:DiagnolPanel Grid.Row="1" Width="220" >
-            <Button BorderBrush="Black" Content="B0" Width="40" Height="30"/>
+        <local:DiagnolPanel CustomLayout="True" Grid.Row="1" Width="220" Margin="5 6 7 8">
+            <Button BorderBrush="Black" Content="B0" Width="40" Height="30" Padding="10 11 12 13"/>
             <Button BorderBrush="Black" Content="B1" Width="40" Height="30"/>
             <Button BorderBrush="Black" Content="B2 (Auto)" Background="Red" Height="30"/>
             <Button BorderBrush="Black" Content="B3" Width="40" Height="30"/>

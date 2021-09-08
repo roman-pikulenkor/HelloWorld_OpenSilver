@@ -14,12 +14,11 @@ namespace HelloWorld
         {
             
         }
-        /*
+        
         protected override Size MeasureOverride(Size availableSize)
         {
             IEnumerable<DependencyObject> children = VisualTreeHelper.GetVisualChildren(this);
 
-            Console.WriteLine("DiagnolPanel: MeasureOverride");
 
             var mySize = new Size();
 
@@ -35,8 +34,6 @@ namespace HelloWorld
 
         protected override Size ArrangeOverride(Size finalSize)
         {
-            Console.WriteLine("ArrangeOverride");
-
             var location = new Point();
 
             int childNumber = 0;
@@ -93,8 +90,9 @@ namespace HelloWorld
 
         private double GetYLocationAfterMiddleChild(int relativeChildNumber)
         {
-            UIElement correspondingChild = this.Children[relativeChildNumber - 2];
-            return correspondingChild.VisualBounds.Top;
+            //UIElement correspondingChild = this.Children[relativeChildNumber - 2];
+            //return correspondingChild.VisualBounds.Top;
+            return 0;
         }
 
         private int GetTheMiddleChild(int count)
@@ -110,6 +108,6 @@ namespace HelloWorld
             }
 
             return middleChild;
-        }*/
+        }
     }
 }
