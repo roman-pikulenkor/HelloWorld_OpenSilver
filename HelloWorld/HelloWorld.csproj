@@ -136,7 +136,7 @@
 	<Content Include="WrapPanelTestPage.xaml">
 	  <Generator>MSBuild:Compile</Generator>
 	</Content>
-	<PackageReference Include="OpenSilver" Version="1.0.0-alpha-008" />
+	<PackageReference Include="OpenSilver" Version="1.0.0-beta.1.22" />
 	<Content Update="UnoTestPage.xaml">
 		<Generator>MSBuild:Compile</Generator>
 	</Content>

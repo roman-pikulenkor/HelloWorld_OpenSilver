@@ -1,5 +1,4 @@
-﻿using DotNetForHtml5;
-using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Net.Http;
@@ -12,7 +11,6 @@ namespace HelloWorld.Browser
     {
         public async static Task Main(string[] args)
         {
-            //Cshtml5Initializer.Initialize();
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
