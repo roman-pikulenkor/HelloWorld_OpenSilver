@@ -48,6 +48,7 @@
     <None Remove="TileViewTestPage.xaml" />
     <None Remove="TranslateTestPage.xaml" />
     <None Remove="WrapPanelTestPage.xaml" />
+	<None Remove="TestListBoxPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -111,6 +112,9 @@
     <Content Include="TextTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+	<Content Include="TestListBoxPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,7 +140,7 @@
 	<Content Include="WrapPanelTestPage.xaml">
 	  <Generator>MSBuild:Compile</Generator>
 	</Content>
-	<PackageReference Include="OpenSilver" Version="1.0.0-beta.1.22" />
+	<PackageReference Include="OpenSilver" Version="1.0.0" />
 	<Content Update="UnoTestPage.xaml">
 		<Generator>MSBuild:Compile</Generator>
 	</Content>

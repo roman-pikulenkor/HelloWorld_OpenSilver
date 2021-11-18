@@ -24,6 +24,7 @@ namespace HelloWorld.Browser
         {
             Application.RunApplication(() =>
                 {
+                    Console.WriteLine("Run Application");
                     var app = new HelloWorld.App();
                 });
         }

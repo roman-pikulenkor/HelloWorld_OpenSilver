@@ -66,7 +66,9 @@ namespace HelloWorld
 
             //var page = new CheckBoxTestPage();
 
-            var page = new TestCustomLayout();
+            //var page = new TestCustomLayout();
+
+            var page = new TestListBoxPage();
 
             Window.Current.Content = page;
 

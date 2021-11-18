@@ -1,10 +1,11 @@
-﻿<Page
+﻿<sdk:Page
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     x:Class="HelloWorld.TestCustomLayout"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:HelloWorld">
 
-    <StackPanel>
+    <StackPanel Margin="50">
         <TextBlock Text="Enable CustomLayout in Auto size cell"/>
         <Grid>
             <Grid.RowDefinitions>
@@ -18,17 +19,17 @@
         </Grid>
         <Grid Margin="0 10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="600"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Button 1" FontSize="20"/>
-            <Button Grid.Column="1" Content="Button 2" FontSize="20" CustomLayout="True"/>
-            <Button Grid.Column="2" Content="Button 3" FontSize="20" CustomLayout="True"/>
+            <Button Grid.Column="0" Content="Button 4" FontSize="20"/>
+            <Button Grid.Column="1" Content="Button 5" FontSize="20"/>
+            <Button Grid.Column="2" Content="Button 6" FontSize="20" CustomLayout="True"/>
         </Grid>
-        <Button Content="Button 4" FontSize="20" CustomLayout="True" Margin="10"/>
+        <Button Content="Button 7" FontSize="20" CustomLayout="True" Margin="10"/>
         <Canvas Height="300">
             <Button Canvas.Left="10" Canvas.Top = "5" Content="In canvas" CustomLayout="True"/>
         </Canvas>
     </StackPanel>
-</Page>
+</sdk:Page>

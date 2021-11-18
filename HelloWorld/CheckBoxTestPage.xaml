@@ -1,4 +1,5 @@
-﻿<Page
+﻿<sdk:Page
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     x:Class="HelloWorld.CheckBoxTestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -224,4 +225,4 @@
             <TextBlock Text="15________" Margin="10"/>
         </StackPanel>
     </ScrollViewer>
-</Page>
+</sdk:Page>

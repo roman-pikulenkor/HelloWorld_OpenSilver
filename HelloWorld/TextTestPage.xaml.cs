@@ -17,6 +17,29 @@ namespace HelloWorld
         public TextTestPage()
         {
             this.InitializeComponent();
+            Application.Current.Host.Settings.EnableInteropLogging = true;
+
+            // TestReplace();
+        }
+
+        private void TestReplace()
+        {
+            string toExecute = "var element = document.getElementByIdSafe(id1840);{0}, if (element)";
+            string uid = "id100";
+
+            DateTime dtStart = DateTime.Now;
+            for (int i = 0; i < 10000; i++)
+            {
+                string formatted = $@"var element = document.getElementByIdSafe(id1840);{uid}, if (element)";
+            }
+            Console.WriteLine($"format {(DateTime.Now - dtStart).TotalMilliseconds}");
+
+            dtStart = DateTime.Now;
+            for (int i = 0; i < 10000; i++)
+            {
+                string formatted = toExecute.Replace("{0}", uid);
+            }
+            Console.WriteLine($"replace {(DateTime.Now - dtStart).TotalMilliseconds}");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

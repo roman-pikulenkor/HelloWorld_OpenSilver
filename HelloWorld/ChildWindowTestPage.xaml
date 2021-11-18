@@ -1,4 +1,5 @@
-﻿<Page
+﻿<sdk:Page
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     x:Class="HelloWorld.ChildWindowTestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,4 +19,4 @@
             </StackPanel>
         </Grid>
     </ContentControl>
-</Page>
+</sdk:Page>

@@ -1,4 +1,5 @@
-﻿<Page
+﻿<sdk:Page
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     x:Class="HelloWorld.FrameTestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,17 +10,17 @@
         <Border x:Name="BannerAboutOpenSilverPerformance" Background="red" HorizontalAlignment="Stretch" Padding="10,4,10,4">
             <TextBlock  Text="NOTE: Performance will improve by at least 30 times when AOT compilation becomes available later in 2020." Foreground="White" FontSize="16" HorizontalAlignment="Left" TextWrapping="Wrap"/>
         </Border>
-        <Frame x:Name="PageContainer" JournalOwnership="Automatic" Margin="5,0,0,30">
-            <Frame.UriMapper>
-                <UriMapper>
-                    <UriMapping
+        <sdk:Frame x:Name="PageContainer" JournalOwnership="Automatic" Margin="5,0,0,30">
+            <sdk:Frame.UriMapper>
+                <sdk:UriMapper>
+                    <sdk:UriMapping
                         Uri="/{page_name}"
                         MappedUri="/Samples/{page_name}/{page_name}.xaml"/>
-                </UriMapper>
-            </Frame.UriMapper>
-            <Frame.RenderTransform>
+                </sdk:UriMapper>
+            </sdk:Frame.UriMapper>
+            <sdk:Frame.RenderTransform>
                 <TranslateTransform/>
-            </Frame.RenderTransform>
-        </Frame>
+            </sdk:Frame.RenderTransform>
+        </sdk:Frame>
     </StackPanel>
-</Page>
+</sdk:Page>

@@ -1,4 +1,5 @@
-﻿<Page
+﻿<sdk:Page
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     x:Class="HelloWorld.GridTestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -28,4 +29,4 @@
         <Button Grid.Row="0" Grid.Column="2" Content="RowHeight" Click="CalculateButton_Click"/>
         <Button Grid.Row="2" Grid.Column="0" Content="ColumnWidth" Click="ColumnWidthButton_Click"/>
     </Grid>
-</Page>
+</sdk:Page>
