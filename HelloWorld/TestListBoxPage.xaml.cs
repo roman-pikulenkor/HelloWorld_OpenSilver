@@ -24,9 +24,9 @@ namespace HelloWorld
 
             if (bUseItemsSource == false)
             {
-                for (int i = 0; i < 50; i++)
+                for (int i = 0; i < 1000; i++)
                 {
-                    listBox.Items.Add(i.ToString() + ".ABC");
+                    //listBox.Items.Add(i.ToString() + ".ABC");
                 }
             }
             else
@@ -36,7 +36,7 @@ namespace HelloWorld
                     int j = i / 3;
                     source.Add((j * 3).ToString() + ".AAAAABBBBBCCCCC");
                 }
-                listBox.ItemsSource = source;
+                //listBox.ItemsSource = source;
             }
         }
 

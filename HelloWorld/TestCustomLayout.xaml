@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:HelloWorld">
 
     <StackPanel Margin="50">
-        <TextBlock Text="Enable CustomLayout in Auto size cell"/>
+        <!--<TextBlock Text="Enable CustomLayout in Auto size cell"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
@@ -14,22 +14,29 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Button Grid.Row="0" Content="Button 1" FontSize="20"/>
-            <Button Grid.Row="1" Content="Button 2" FontSize="20" CustomLayout="True" Margin="1 2 3 4" Padding="4 5 6 7"/>
-            <Button Grid.Row="2" Content="Button 3" FontSize="20" VerticalContentAlignment="Bottom" CustomLayout="True"/>
-        </Grid>
+            <Button Grid.Row="1" Content="Button 2" FontSize="20" MinHeight="40" Margin="1 2 3 4" Padding="4 5 6 7"/>
+            <Button Grid.Row="2" Content="Button 3" FontSize="20" VerticalContentAlignment="Bottom" IsAutoHeightOnCustomLayout="True"/>
+        </Grid>-->
         <Grid Margin="0 10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="600"/>
+                <ColumnDefinition Width=".4*"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Button 4" FontSize="20"/>
-            <Button Grid.Column="1" Content="Button 5" FontSize="20"/>
-            <Button Grid.Column="2" Content="Button 6" FontSize="20" CustomLayout="True"/>
+            <Button Grid.Column="0" Content="Button 4" FontSize="20" Click="Button4_Click" />
+            <Grid Grid.Column="1">
+                <Grid Opacity="0.3">
+                    <Rectangle Margin="1 1 -1 -1" Opacity="0.05" Stroke="Black" StrokeThickness="1" RadiusX="4" RadiusY="3"/>
+                    <Rectangle Margin="1 1 0 0" Opacity="0.1" Stroke="Black" StrokeThickness="1" RadiusX="3" RadiusY="2"/>
+                    <Rectangle Margin="2 2 1 1" Fill="Black" RadiusX="2" RadiusY="1" Opacity="0.3" StrokeThickness="1"/>
+                </Grid>
+                <Button Content="Button 5" Name="Button5" FontSize="20" CustomLayout="True"/>
+            </Grid>            
+            <Button Grid.Column="2" Content="Button 6" FontSize="20" Click="Button6_Click" CustomLayout="True"/>
         </Grid>
-        <Button Content="Button 7" FontSize="20" CustomLayout="True" Margin="10"/>
+        <!--<Button Content="Button 7" FontSize="20" IsAutoHeightOnCustomLayout="True" Margin="10"/>
         <Canvas Height="300">
-            <Button Canvas.Left="10" Canvas.Top = "5" Content="In canvas" CustomLayout="True"/>
-        </Canvas>
+            <Button Canvas.Left="10" Canvas.Top = "5" Content="In canvas" IsAutoHeightOnCustomLayout="True" IsAutoWidthOnCustomLayout="True"/>
+        </Canvas>-->
     </StackPanel>
 </sdk:Page>

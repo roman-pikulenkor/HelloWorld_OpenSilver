@@ -21,13 +21,18 @@ namespace HelloWorld
 
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
         {
-            RowDefinition1.Height = new GridLength(RowDefinition1.Height.Value + 5);
+            //RowDefinition1.Height = new GridLength(RowDefinition1.Height.Value + 5);
             ////Window.Current.CalculateLayout();
+            border1.Visibility = Visibility.Visible;
+            //(VisualTreeHelper.GetParent(border1) as UIElement)?.InvalidateMeasure();
+            //(VisualTreeHelper.GetParent(border1) as UIElement)?.InvalidateArrange();
         }
 
         private void ColumnWidthButton_Click(object sender, RoutedEventArgs e)
         {
-            ColumnDefinition1.Width = new GridLength(ColumnDefinition1.Width.Value + 5);
+            //ColumnDefinition1.Width = new GridLength(ColumnDefinition1.Width.Value + 5);
+            grid1.InvalidateMeasure();
+            grid1.InvalidateArrange();
         }
     }
 }

@@ -7,9 +7,9 @@
     xmlns:local="clr-namespace:HelloWorld">
     
     <StackPanel Width="150">
-        <!--<Button Click="AddButton_Click" Content="Add Item"/>
+        <Button Click="AddButton_Click" Content="Add Item"/>
         <Button Click="RemoveButton_Click" Content="Remove Item"/>
-        <Button Click="UpdateButton_Click" Content="Update Item"/>-->
+        <Button Click="UpdateButton_Click" Content="Update Item"/>
 
         <!--<ListBox x:Name="listBox" CustomLayout="True" MaxHeight="205" Margin="0,10,0,0" Height="160" >
             <ListBox.ItemsPanel>
@@ -25,6 +25,30 @@
                     <VirtualizingStackPanel/>
                 </ItemsPanelTemplate>
             </ComboBox.ItemsPanel>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
+            <ComboBoxItem Content="1.ABC"/>
         </ComboBox>
 
     </StackPanel>

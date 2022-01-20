@@ -12,16 +12,11 @@ namespace HelloWorld
     {
         public App()
         {
-            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, App started");
             this.InitializeComponent();
 
             //Application.Current.Host.Settings.EnableInteropLogging = true;
 
-            //Console.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading started");
-            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading started");
-
-            var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();
+            // Application.Current.Host.Settings.EnableOptimizationWhereCollapsedControlsAreNotLoaded = true;
 
             // Enter construction logic here...
 
@@ -47,7 +42,6 @@ namespace HelloWorld
 
             //var page = new TestTabcontrol();
 
-            //Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss.fff")}");
             //var page = new GridTestPage();
 
             //var page = new GridTestPage2();
@@ -68,15 +62,12 @@ namespace HelloWorld
 
             //var page = new TestCustomLayout();
 
-            var page = new TestListBoxPage();
+            //var page = new TestListBoxPage();
+            //var page = new TestDataGrid();
+
+            var page = new ValidationTestPage();
 
             Window.Current.Content = page;
-
-            stopwatch.Stop();
-
-            Console.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading done in: " + stopwatch.ElapsedMilliseconds);
-            global::System.Diagnostics.Debug.WriteLine($",{DateTime.Now.ToString("HH:mm:ss.fff")}, Loading done in: " + stopwatch.ElapsedMilliseconds);
-
         }
     }
 }

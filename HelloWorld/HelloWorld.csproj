@@ -23,6 +23,7 @@
   
   <ItemGroup>
     <None Remove="BorderTestPage.xaml" />
+	<None Remove="TestDataGrid.xaml" />
     <None Remove="CanvasTestPage.xaml" />
     <None Remove="CheckBoxTestPage.xaml" />
     <None Remove="ChildWindowTestPage.xaml" />
@@ -47,12 +48,16 @@
     <None Remove="TextTestPage.xaml" />
     <None Remove="TileViewTestPage.xaml" />
     <None Remove="TranslateTestPage.xaml" />
+    <None Remove="ValidationTestPage.xaml" />
     <None Remove="WrapPanelTestPage.xaml" />
 	<None Remove="TestListBoxPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="BorderTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+	<Content Include="TestDataGrid.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="CanvasTestPage.xaml">
@@ -131,6 +136,9 @@
     <Content Include="TranslateTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+    <Content Include="ValidationTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="UnoTestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -141,6 +149,7 @@
 	  <Generator>MSBuild:Compile</Generator>
 	</Content>
 	<PackageReference Include="OpenSilver" Version="1.0.0" />
+	<PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
 	<Content Update="UnoTestPage.xaml">
 		<Generator>MSBuild:Compile</Generator>
 	</Content>
@@ -166,6 +175,12 @@
 	<Compile Update="CustomPanelPage.xaml.cs">
 	  <DependentUpon>CustomPanelPage.xaml</DependentUpon>
 	</Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ValidationTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
   
 </Project>
